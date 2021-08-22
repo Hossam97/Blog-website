@@ -1,0 +1,79 @@
+html{
+  max-width: 100%;
+  overflow-x:hidden;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.welcomeText{
+  position: relative;
+  left: 25%;
+
+}
+.writeNewPost{
+  margin:20px;
+  width:30%;
+  position:relative;
+  left:30%;
+}
+
+
+
+.postContent{
+  position: absolute;
+}
+
+
+.removeIcon{
+
+  min-width: 20px;
+  min-height: 20px;
+  color: white;
+  position: relative;
+  left: 50px;
+}
+
+
+
+
+a:hover{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+  /* color: #334756; */
+}
+
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 100px;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	background-color: #1abc9c;
+}
+
+footer p {
+  position: relative;
+  top: 10px;
+	font-size: 12px;
+  color: #fff;
+}

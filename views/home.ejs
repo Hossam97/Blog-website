@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+<h1 class="welcomeText">Welcome to the Daily Journal</h1>
+<a  href="/compose" class="btn btn-primary stretched-link writeNewPost">Write a new post</a>
+<hr>
+<% for(let i = 0; i < postsArray.length; i++){ %>
+
+        <div class="post">
+
+        <h3 style="color: #595260"> <%= postsArray[i].title %> </h3>
+
+        <% if(postsArray[i].body.length  >= 100){ %>
+        <p> <%= postsArray[i].body.substring(0,100) + " ..." %>
+          <a href="/posts/<%= postsArray[i].title %>"><small>Read More</small></a>
+         </p>
+       <% }else{ %>
+
+         <p> <%= postsArray[i].body %>
+
+         </p>
+
+       <% } %>
+
+        <hr>
+      </div>
+  <% } %>
+<% include partials/footer.ejs %>
